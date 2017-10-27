@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C327BEC51FA32FC200A1FADE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C327BEC41FA32FC200A1FADE /* RegisterViewController.swift */; };
 		C3E8ED671FA2EC48008DDB83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E8ED661FA2EC48008DDB83 /* AppDelegate.swift */; };
-		C3E8ED691FA2EC48008DDB83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E8ED681FA2EC48008DDB83 /* ViewController.swift */; };
+		C3E8ED691FA2EC48008DDB83 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E8ED681FA2EC48008DDB83 /* LoginViewController.swift */; };
 		C3E8ED6C1FA2EC48008DDB83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E8ED6A1FA2EC48008DDB83 /* Main.storyboard */; };
 		C3E8ED6F1FA2EC48008DDB83 /* iPlay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3E8ED6D1FA2EC48008DDB83 /* iPlay.xcdatamodeld */; };
 		C3E8ED711FA2EC48008DDB83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3E8ED701FA2EC48008DDB83 /* Assets.xcassets */; };
@@ -16,9 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C327BEC41FA32FC200A1FADE /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		C3E8ED631FA2EC48008DDB83 /* iPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E8ED661FA2EC48008DDB83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C3E8ED681FA2EC48008DDB83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C3E8ED681FA2EC48008DDB83 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C3E8ED6B1FA2EC48008DDB83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C3E8ED6E1FA2EC48008DDB83 /* iPlay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iPlay.xcdatamodel; sourceTree = "<group>"; };
 		C3E8ED701FA2EC48008DDB83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,7 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				C3E8ED661FA2EC48008DDB83 /* AppDelegate.swift */,
-				C3E8ED681FA2EC48008DDB83 /* ViewController.swift */,
+				C327BEC41FA32FC200A1FADE /* RegisterViewController.swift */,
+				C3E8ED681FA2EC48008DDB83 /* LoginViewController.swift */,
 				C3E8ED6A1FA2EC48008DDB83 /* Main.storyboard */,
 				C3E8ED701FA2EC48008DDB83 /* Assets.xcassets */,
 				C3E8ED721FA2EC48008DDB83 /* LaunchScreen.storyboard */,
@@ -140,8 +143,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3E8ED6F1FA2EC48008DDB83 /* iPlay.xcdatamodeld in Sources */,
-				C3E8ED691FA2EC48008DDB83 /* ViewController.swift in Sources */,
+				C3E8ED691FA2EC48008DDB83 /* LoginViewController.swift in Sources */,
 				C3E8ED671FA2EC48008DDB83 /* AppDelegate.swift in Sources */,
+				C327BEC51FA32FC200A1FADE /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
