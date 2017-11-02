@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SongsView" customModule="iPlay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vVG-Ic-dmQ">
+                    <rect key="frame" x="0.0" y="56" width="375" height="611"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="dXA-Ft-Nx6"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="fBF-NK-GLg"/>
+                    </connections>
+                </tableView>
+                <searchBar contentMode="redraw" placeholder="Song name or artist" translatesAutoresizingMaskIntoConstraints="NO" id="lP2-A5-Udh">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="zkr-eQ-ZE1"/>
+                    </connections>
+                </searchBar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="lP2-A5-Udh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Jjf-w6-5Fk"/>
+                <constraint firstItem="vVG-Ic-dmQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Xnm-7g-mNv"/>
+                <constraint firstItem="lP2-A5-Udh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="YYz-Bb-0GZ"/>
+                <constraint firstItem="vVG-Ic-dmQ" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Zzb-HA-fle"/>
+                <constraint firstItem="vVG-Ic-dmQ" firstAttribute="top" secondItem="lP2-A5-Udh" secondAttribute="bottom" id="a1s-g6-hZV"/>
+                <constraint firstItem="vVG-Ic-dmQ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="bHj-aW-893"/>
+                <constraint firstItem="lP2-A5-Udh" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="bwD-47-6Z9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="searchBar" destination="lP2-A5-Udh" id="Olb-FD-cqt"/>
+                <outlet property="tableView" destination="vVG-Ic-dmQ" id="Lo5-4M-c6E"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+</document>

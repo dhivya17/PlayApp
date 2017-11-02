@@ -7,7 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C30792B11FA82F14001C1C34 /* RegisteredUser+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30792AF1FA82F14001C1C34 /* RegisteredUser+CoreDataClass.swift */; };
+		C30792B21FA82F14001C1C34 /* RegisteredUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30792B01FA82F14001C1C34 /* RegisteredUser+CoreDataProperties.swift */; };
 		C327BEC51FA32FC200A1FADE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C327BEC41FA32FC200A1FADE /* RegisterViewController.swift */; };
+		C327BEC71FA6DC2E00A1FADE /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = C327BEC61FA6DC2E00A1FADE /* data.plist */; };
+		C3C51AAA1FAAD820006ECB7F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C51AA91FAAD820006ECB7F /* MainViewController.swift */; };
+		C3C51AAC1FAAE854006ECB7F /* SongsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C51AAB1FAAE854006ECB7F /* SongsView.swift */; };
+		C3C51AAE1FAAE89C006ECB7F /* PhotosAndVideosCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C51AAD1FAAE89C006ECB7F /* PhotosAndVideosCollectionView.swift */; };
+		C3C51AB01FAAF2C8006ECB7F /* SongsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3C51AAF1FAAF2C8006ECB7F /* SongsView.xib */; };
+		C3C51AB21FAAF2E4006ECB7F /* PhotosAndVideosCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3C51AB11FAAF2E4006ECB7F /* PhotosAndVideosCollectionView.xib */; };
+		C3C51AB51FAAF357006ECB7F /* SongsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C51AB31FAAF357006ECB7F /* SongsTableViewCell.swift */; };
+		C3C51AB61FAAF357006ECB7F /* SongsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3C51AB41FAAF357006ECB7F /* SongsTableViewCell.xib */; };
+		C3C51AB81FAB23A1006ECB7F /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C51AB71FAB23A1006ECB7F /* Song.swift */; };
 		C3E8ED671FA2EC48008DDB83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E8ED661FA2EC48008DDB83 /* AppDelegate.swift */; };
 		C3E8ED691FA2EC48008DDB83 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E8ED681FA2EC48008DDB83 /* LoginViewController.swift */; };
 		C3E8ED6C1FA2EC48008DDB83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E8ED6A1FA2EC48008DDB83 /* Main.storyboard */; };
@@ -17,7 +28,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C30792AF1FA82F14001C1C34 /* RegisteredUser+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisteredUser+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C30792B01FA82F14001C1C34 /* RegisteredUser+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisteredUser+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C327BEC41FA32FC200A1FADE /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		C327BEC61FA6DC2E00A1FADE /* data.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
+		C3C51AA91FAAD820006ECB7F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C3C51AAB1FAAE854006ECB7F /* SongsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsView.swift; sourceTree = "<group>"; };
+		C3C51AAD1FAAE89C006ECB7F /* PhotosAndVideosCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosAndVideosCollectionView.swift; sourceTree = "<group>"; };
+		C3C51AAF1FAAF2C8006ECB7F /* SongsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongsView.xib; sourceTree = "<group>"; };
+		C3C51AB11FAAF2E4006ECB7F /* PhotosAndVideosCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotosAndVideosCollectionView.xib; sourceTree = "<group>"; };
+		C3C51AB31FAAF357006ECB7F /* SongsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsTableViewCell.swift; sourceTree = "<group>"; };
+		C3C51AB41FAAF357006ECB7F /* SongsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongsTableViewCell.xib; sourceTree = "<group>"; };
+		C3C51AB71FAB23A1006ECB7F /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		C3E8ED631FA2EC48008DDB83 /* iPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E8ED661FA2EC48008DDB83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3E8ED681FA2EC48008DDB83 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -58,13 +80,24 @@
 		C3E8ED651FA2EC48008DDB83 /* iPlay */ = {
 			isa = PBXGroup;
 			children = (
+				C3C51AB71FAB23A1006ECB7F /* Song.swift */,
 				C3E8ED661FA2EC48008DDB83 /* AppDelegate.swift */,
 				C327BEC41FA32FC200A1FADE /* RegisterViewController.swift */,
 				C3E8ED681FA2EC48008DDB83 /* LoginViewController.swift */,
+				C30792AF1FA82F14001C1C34 /* RegisteredUser+CoreDataClass.swift */,
+				C30792B01FA82F14001C1C34 /* RegisteredUser+CoreDataProperties.swift */,
+				C3C51AA91FAAD820006ECB7F /* MainViewController.swift */,
+				C3C51AAB1FAAE854006ECB7F /* SongsView.swift */,
+				C3C51AAF1FAAF2C8006ECB7F /* SongsView.xib */,
+				C3C51AB31FAAF357006ECB7F /* SongsTableViewCell.swift */,
+				C3C51AB41FAAF357006ECB7F /* SongsTableViewCell.xib */,
+				C3C51AB11FAAF2E4006ECB7F /* PhotosAndVideosCollectionView.xib */,
+				C3C51AAD1FAAE89C006ECB7F /* PhotosAndVideosCollectionView.swift */,
 				C3E8ED6A1FA2EC48008DDB83 /* Main.storyboard */,
 				C3E8ED701FA2EC48008DDB83 /* Assets.xcassets */,
 				C3E8ED721FA2EC48008DDB83 /* LaunchScreen.storyboard */,
 				C3E8ED751FA2EC48008DDB83 /* Info.plist */,
+				C327BEC61FA6DC2E00A1FADE /* data.plist */,
 				C3E8ED6D1FA2EC48008DDB83 /* iPlay.xcdatamodeld */,
 			);
 			path = iPlay;
@@ -131,7 +164,11 @@
 			files = (
 				C3E8ED741FA2EC48008DDB83 /* LaunchScreen.storyboard in Resources */,
 				C3E8ED711FA2EC48008DDB83 /* Assets.xcassets in Resources */,
+				C327BEC71FA6DC2E00A1FADE /* data.plist in Resources */,
+				C3C51AB01FAAF2C8006ECB7F /* SongsView.xib in Resources */,
 				C3E8ED6C1FA2EC48008DDB83 /* Main.storyboard in Resources */,
+				C3C51AB61FAAF357006ECB7F /* SongsTableViewCell.xib in Resources */,
+				C3C51AB21FAAF2E4006ECB7F /* PhotosAndVideosCollectionView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,10 +179,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3C51AB51FAAF357006ECB7F /* SongsTableViewCell.swift in Sources */,
+				C3C51AAA1FAAD820006ECB7F /* MainViewController.swift in Sources */,
+				C30792B11FA82F14001C1C34 /* RegisteredUser+CoreDataClass.swift in Sources */,
 				C3E8ED6F1FA2EC48008DDB83 /* iPlay.xcdatamodeld in Sources */,
+				C30792B21FA82F14001C1C34 /* RegisteredUser+CoreDataProperties.swift in Sources */,
+				C3C51AB81FAB23A1006ECB7F /* Song.swift in Sources */,
 				C3E8ED691FA2EC48008DDB83 /* LoginViewController.swift in Sources */,
 				C3E8ED671FA2EC48008DDB83 /* AppDelegate.swift in Sources */,
+				C3C51AAE1FAAE89C006ECB7F /* PhotosAndVideosCollectionView.swift in Sources */,
 				C327BEC51FA32FC200A1FADE /* RegisterViewController.swift in Sources */,
+				C3C51AAC1FAAE854006ECB7F /* SongsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

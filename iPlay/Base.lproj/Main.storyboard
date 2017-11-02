@@ -9,6 +9,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="TrebuchetMS.ttf">
+            <string>TrebuchetMS</string>
+        </array>
         <array key="TrebuchetMSBold.ttf">
             <string>TrebuchetMS-Bold</string>
         </array>
@@ -20,7 +23,7 @@
         <!--Login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iPlay" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="iPlay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,7 +40,7 @@
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.31372549020000001" green="0.16862745100000001" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lef-oB-FiA">
                                 <rect key="frame" x="165.66666666666666" y="365" width="43" height="30"/>
@@ -46,8 +49,11 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="17"/>
                                 <state key="normal" title="Login">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Dx-UN-S09"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2D7-wE-yIR">
                                 <rect key="frame" x="41" y="417" width="293" height="30"/>
@@ -73,7 +79,9 @@
                                     <constraint firstAttribute="height" constant="30" id="5CP-rU-SvU"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="17"/>
-                                <state key="normal" title="Register"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <segue destination="E4R-HS-6hu" kind="show" id="ZDX-jW-WCe"/>
                                 </connections>
@@ -85,16 +93,21 @@
                                     <constraint firstAttribute="width" constant="80" id="Tvu-A4-BvN"/>
                                 </constraints>
                             </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="QYV-XE-R9G">
+                                <rect key="frame" x="169" y="414" width="37" height="37"/>
+                            </activityIndicatorView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Y2M-oj-f4F" firstAttribute="trailing" secondItem="XXw-KZ-kzb" secondAttribute="trailing" id="5gN-Tf-uoV"/>
                             <constraint firstItem="Y2M-oj-f4F" firstAttribute="top" secondItem="XXw-KZ-kzb" secondAttribute="bottom" constant="27" id="7ec-c3-tmq"/>
                             <constraint firstItem="E4H-wY-UqX" firstAttribute="trailing" secondItem="XXw-KZ-kzb" secondAttribute="trailing" id="9KS-gA-xtU"/>
+                            <constraint firstItem="QYV-XE-R9G" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Hef-9K-gu5"/>
                             <constraint firstItem="2D7-wE-yIR" firstAttribute="trailing" secondItem="XXw-KZ-kzb" secondAttribute="trailing" id="I1f-wb-lvf"/>
                             <constraint firstItem="lef-oB-FiA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IMr-kA-BtJ"/>
                             <constraint firstItem="gyk-Mg-IEV" firstAttribute="top" secondItem="E4H-wY-UqX" secondAttribute="bottom" constant="29.670000076293945" id="IYB-MD-xak"/>
                             <constraint firstItem="XXw-KZ-kzb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="UNt-my-te0"/>
+                            <constraint firstItem="QYV-XE-R9G" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Uqu-BM-VEq"/>
                             <constraint firstItem="3kT-Sb-gFU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="Xcf-iX-WXq"/>
                             <constraint firstItem="XXw-KZ-kzb" firstAttribute="top" secondItem="3kT-Sb-gFU" secondAttribute="bottom" constant="45" id="XrW-ns-Lmq"/>
                             <constraint firstItem="E4H-wY-UqX" firstAttribute="leading" secondItem="XXw-KZ-kzb" secondAttribute="leading" id="YWd-Gc-We6"/>
@@ -110,10 +123,32 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="Mgv-fb-IMB"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="QYV-XE-R9G" id="7OC-II-VWZ"/>
+                        <outlet property="email" destination="XXw-KZ-kzb" id="OLL-dk-WGO"/>
+                        <outlet property="passwordField" destination="Y2M-oj-f4F" id="Apa-Ew-SYZ"/>
+                        <segue destination="aqZ-eN-XLw" kind="show" identifier="main" id="Hdb-AD-5pF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1232.8" y="47.290640394088669"/>
+        </scene>
+        <!--iPlay-->
+        <scene sceneID="HdF-SM-fKw">
+            <objects>
+                <viewController id="h0y-Rd-23b" customClass="MainViewController" customModule="iPlay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L8S-4i-w6p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="GOn-ZD-4Yz"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="iPlay" largeTitleDisplayMode="always" id="Mh8-Ar-mYu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IlD-Ad-Qac" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2972" y="38"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="8yw-4F-mrP">
@@ -132,7 +167,7 @@
                                         <color key="textColor" red="0.31372549020000001" green="0.16862745100000001" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q06-It-jQS">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q06-It-jQS">
                                         <rect key="frame" x="20" y="62.333333333333343" width="258" height="20"/>
                                         <fontDescription key="fontDescription" name="Trebuchet-BoldItalic" family="Trebuchet MS" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -144,7 +179,7 @@
                                         <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Last Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3P-9e-0pR">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3P-9e-0pR">
                                         <rect key="frame" x="20" y="152.33333333333334" width="258" height="20"/>
                                         <fontDescription key="fontDescription" name="Trebuchet-BoldItalic" family="Trebuchet MS" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -153,8 +188,8 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ddW-Vj-3ex">
                                         <rect key="frame" x="20" y="192.33333333333331" width="338" height="30"/>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OO3-6I-uvz">
                                         <rect key="frame" x="20" y="242.33333333333331" width="258" height="20"/>
@@ -165,10 +200,10 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fj0-dG-yxl">
                                         <rect key="frame" x="20" y="282.33333333333331" width="338" height="30"/>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                                     </textField>
-                                    <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="lpf-Mv-h6D">
+                                    <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="lpf-Mv-h6D">
                                         <rect key="frame" x="17" y="385" width="317" height="108"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="108" id="q83-7d-BPb"/>
@@ -176,8 +211,8 @@
                                         <date key="date" timeIntervalSinceReferenceDate="530778297.54984802">
                                             <!--2017-10-27 06:24:57 +0000-->
                                         </date>
-                                        <date key="maximumDate" timeIntervalSinceReferenceDate="-62419728208">
-                                            <!--0022-12-31 10:36:32 +0000-->
+                                        <date key="maximumDate" timeIntervalSinceReferenceDate="536410800">
+                                            <!--2017-12-31 11:00:00 +0000-->
                                         </date>
                                     </datePicker>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="BirthDate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUz-wS-OvW">
@@ -193,7 +228,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Edg-dq-RvY">
-                                        <rect key="frame" x="158" y="814" width="65" height="30"/>
+                                        <rect key="frame" x="158" y="802" width="65" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="WKM-8d-4RS"/>
                                         </constraints>
@@ -206,11 +241,20 @@
                                         </connections>
                                     </button>
                                     <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2b4-Tu-C9l">
-                                        <rect key="frame" x="17" y="572" width="332" height="162"/>
+                                        <rect key="frame" x="17" y="572" width="332" height="100"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="162" id="9B8-ua-Ykg"/>
+                                            <constraint firstAttribute="height" constant="100" id="9B8-ua-Ykg"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="dataSource" destination="E4R-HS-6hu" id="fvZ-tu-UdH"/>
+                                            <outlet property="delegate" destination="E4R-HS-6hu" id="HIH-Mj-tt9"/>
+                                        </connections>
                                     </pickerView>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="uR5-7s-Suw">
+                                        <rect key="frame" x="180" y="429" width="20" height="20"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="color" red="0.31372549020000001" green="0.16862745100000001" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </activityIndicatorView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="y3P-9e-0pR" firstAttribute="trailing" secondItem="q06-It-jQS" secondAttribute="trailing" id="3ez-gJ-36k"/>
@@ -232,7 +276,7 @@
                                     <constraint firstItem="fOu-Bw-gbT" firstAttribute="leading" secondItem="Kcw-fb-agO" secondAttribute="leading" constant="17" id="Wno-Bb-L9B"/>
                                     <constraint firstItem="GUz-wS-OvW" firstAttribute="top" secondItem="fj0-dG-yxl" secondAttribute="bottom" constant="20" id="Xnb-bx-kpH"/>
                                     <constraint firstItem="GUz-wS-OvW" firstAttribute="leading" secondItem="q06-It-jQS" secondAttribute="leading" id="Xxr-k5-Ep8"/>
-                                    <constraint firstItem="Edg-dq-RvY" firstAttribute="top" secondItem="2b4-Tu-C9l" secondAttribute="bottom" constant="80" id="b9w-jm-sVJ"/>
+                                    <constraint firstItem="Edg-dq-RvY" firstAttribute="top" secondItem="2b4-Tu-C9l" secondAttribute="bottom" constant="130" id="b9w-jm-sVJ"/>
                                     <constraint firstItem="ddW-Vj-3ex" firstAttribute="leading" secondItem="q06-It-jQS" secondAttribute="leading" id="d9H-he-M1l"/>
                                     <constraint firstAttribute="trailing" secondItem="2b4-Tu-C9l" secondAttribute="trailing" constant="26" id="fyl-lx-BK9"/>
                                     <constraint firstItem="y3P-9e-0pR" firstAttribute="leading" secondItem="q06-It-jQS" secondAttribute="leading" id="gJZ-LR-9g1"/>
@@ -244,15 +288,17 @@
                                     <constraint firstAttribute="bottom" secondItem="Edg-dq-RvY" secondAttribute="bottom" constant="29" id="qpl-Fo-DGr"/>
                                     <constraint firstItem="OO3-6I-uvz" firstAttribute="top" secondItem="ddW-Vj-3ex" secondAttribute="bottom" constant="20" id="rvn-Ny-QwE"/>
                                     <constraint firstItem="lpf-Mv-h6D" firstAttribute="top" secondItem="GUz-wS-OvW" secondAttribute="bottom" constant="28.666666666666686" id="sfg-Bd-B5O"/>
+                                    <constraint firstItem="uR5-7s-Suw" firstAttribute="centerY" secondItem="Kcw-fb-agO" secondAttribute="centerY" id="sk7-QL-cz3"/>
                                     <constraint firstItem="j3G-tk-xXh" firstAttribute="leading" secondItem="GUz-wS-OvW" secondAttribute="leading" constant="2" id="t6c-l0-lIJ"/>
                                     <constraint firstItem="GUz-wS-OvW" firstAttribute="trailing" secondItem="q06-It-jQS" secondAttribute="trailing" id="tKC-RO-uEx"/>
                                     <constraint firstItem="fj0-dG-yxl" firstAttribute="trailing" secondItem="AEQ-QB-eeN" secondAttribute="trailing" id="uy7-cU-Ids"/>
                                     <constraint firstItem="AEQ-QB-eeN" firstAttribute="top" secondItem="q06-It-jQS" secondAttribute="bottom" constant="20" id="w6q-gg-cNj"/>
                                     <constraint firstItem="y3P-9e-0pR" firstAttribute="top" secondItem="AEQ-QB-eeN" secondAttribute="bottom" constant="20" id="wvk-ld-XoO"/>
+                                    <constraint firstItem="uR5-7s-Suw" firstAttribute="centerX" secondItem="Kcw-fb-agO" secondAttribute="centerX" constant="2" id="yDi-KI-HW0"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Kcw-fb-agO" firstAttribute="leading" secondItem="SQ9-yW-Brz" secondAttribute="leading" id="1eC-QR-WI9"/>
                             <constraint firstItem="Kcw-fb-agO" firstAttribute="trailing" secondItem="SQ9-yW-Brz" secondAttribute="trailing" id="an4-5E-zOh"/>
@@ -263,11 +309,12 @@
                     </view>
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="uR5-7s-Suw" id="l4A-oI-qOM"/>
                         <outlet property="bday" destination="lpf-Mv-h6D" id="C7P-R6-8sZ"/>
                         <outlet property="emailField" destination="fj0-dG-yxl" id="ZLV-3T-sYb"/>
                         <outlet property="fnameField" destination="AEQ-QB-eeN" id="LLG-MT-ZN6"/>
                         <outlet property="interestsView" destination="2b4-Tu-C9l" id="SZ2-Cy-ao3"/>
-                        <outlet property="lnameField" destination="y3P-9e-0pR" id="yey-uC-jSg"/>
+                        <outlet property="passwordField" destination="ddW-Vj-3ex" id="7Tj-qa-oPH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uS6-2H-agK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -292,6 +339,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aey-fw-ppi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="492.80000000000001" y="51.724137931034484"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zEO-iH-5HF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aqZ-eN-XLw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="e0f-oA-I9y">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="h0y-Rd-23b" kind="relationship" relationship="rootViewController" id="KOy-DV-NOK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qDr-ff-aOK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2124" y="38"/>
         </scene>
     </scenes>
     <resources>

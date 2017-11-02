@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TrebuchetMS.ttf">
+            <string>TrebuchetMS</string>
+        </array>
+        <array key="TrebuchetMSBold.ttf">
+            <string>TrebuchetMS-Bold</string>
+        </array>
+        <array key="TrebuchetMSItalic.ttf">
+            <string>TrebuchetMS-Italic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="songCell" rowHeight="59" id="KGk-i7-Jjw" customClass="SongsTableViewCell" customModule="iPlay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="339" height="59"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="339" height="58.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Song" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="OgY-fs-8Lc">
+                        <rect key="frame" x="2" y="0.0" width="234" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="0Gr-vD-wiv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lJ-ti-UqN">
+                        <rect key="frame" x="292" y="19" width="47" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="47" id="PXI-Gr-6XM"/>
+                            <constraint firstAttribute="height" constant="21" id="UEB-5j-gGn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="13"/>
+                        <state key="normal" title="Cancel">
+                            <color key="titleColor" red="1" green="0.1800382291" blue="0.20608124729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="cancelAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="jd8-U9-oot"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpy-VY-CNK">
+                        <rect key="frame" x="231" y="15" width="46" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="M4G-T9-lYP"/>
+                            <constraint firstAttribute="width" constant="46" id="y9q-42-Gsk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="13"/>
+                        <state key="normal" title="Pause">
+                            <color key="titleColor" red="1" green="0.1800382291" blue="0.20608124729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="pauseOrResumeAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fr8-2F-72V"/>
+                        </connections>
+                    </button>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100% of 1.35MB" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zT-Xz-uxD">
+                        <rect key="frame" x="245" y="44" width="84" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6y-QX-75u">
+                        <rect key="frame" x="240" y="14" width="84" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="84" id="Ngo-aR-Kqm"/>
+                            <constraint firstAttribute="height" constant="30" id="ilP-HX-oQN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
+                        <state key="normal" title="Download">
+                            <color key="titleColor" red="0.31372549020000001" green="0.1529411765" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="downloadAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="S7F-Sb-boT"/>
+                        </connections>
+                    </button>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mnm-jQ-wAD">
+                        <rect key="frame" x="10" y="50" width="235" height="2"/>
+                    </progressView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3c-De-MG1">
+                        <rect key="frame" x="2" y="25" width="234" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="nMZ-J1-dtx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="TrebuchetMS-Italic" family="Trebuchet MS" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OgY-fs-8Lc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="2" id="5gi-6c-8o0"/>
+                    <constraint firstItem="5zT-Xz-uxD" firstAttribute="leading" secondItem="mnm-jQ-wAD" secondAttribute="trailing" id="8Pc-Yo-AdI"/>
+                    <constraint firstItem="N3c-De-MG1" firstAttribute="trailing" secondItem="OgY-fs-8Lc" secondAttribute="trailing" id="CFF-Cq-ErJ"/>
+                    <constraint firstItem="4lJ-ti-UqN" firstAttribute="leading" secondItem="rpy-VY-CNK" secondAttribute="trailing" constant="15" id="E6K-8S-NU2"/>
+                    <constraint firstItem="mnm-jQ-wAD" firstAttribute="top" secondItem="N3c-De-MG1" secondAttribute="bottom" constant="8" id="Nwj-Ua-vz2"/>
+                    <constraint firstItem="rpy-VY-CNK" firstAttribute="leading" secondItem="N3c-De-MG1" secondAttribute="trailing" constant="-5" id="Q7j-5J-zAo"/>
+                    <constraint firstItem="rpy-VY-CNK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="SHA-ka-oSO"/>
+                    <constraint firstItem="e6y-QX-75u" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="XE0-i9-SRd"/>
+                    <constraint firstItem="5zT-Xz-uxD" firstAttribute="top" secondItem="e6y-QX-75u" secondAttribute="bottom" id="cWB-ug-aJS"/>
+                    <constraint firstItem="mnm-jQ-wAD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="dfK-KY-gV9"/>
+                    <constraint firstAttribute="trailing" secondItem="5zT-Xz-uxD" secondAttribute="trailing" constant="10" id="ecm-Ge-e7e"/>
+                    <constraint firstAttribute="bottom" secondItem="mnm-jQ-wAD" secondAttribute="bottom" constant="6.5" id="jJU-pu-Ehd"/>
+                    <constraint firstItem="N3c-De-MG1" firstAttribute="top" secondItem="OgY-fs-8Lc" secondAttribute="bottom" constant="2" id="lxt-yA-mtD"/>
+                    <constraint firstAttribute="trailing" secondItem="e6y-QX-75u" secondAttribute="trailing" constant="15" id="mKN-6d-D3s"/>
+                    <constraint firstItem="4lJ-ti-UqN" firstAttribute="centerY" secondItem="rpy-VY-CNK" secondAttribute="centerY" id="p4y-jz-e8w"/>
+                    <constraint firstItem="e6y-QX-75u" firstAttribute="leading" secondItem="OgY-fs-8Lc" secondAttribute="trailing" constant="4" id="tCc-Kl-JPY"/>
+                    <constraint firstItem="4lJ-ti-UqN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="tUe-f1-hJf"/>
+                    <constraint firstItem="N3c-De-MG1" firstAttribute="leading" secondItem="OgY-fs-8Lc" secondAttribute="leading" id="to8-2Y-Dcf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="artistName" destination="N3c-De-MG1" id="BY7-5l-24d"/>
+                <outlet property="cancelButton" destination="4lJ-ti-UqN" id="GVT-Ie-t55"/>
+                <outlet property="downloadButton" destination="e6y-QX-75u" id="ciN-62-oh7"/>
+                <outlet property="pauseButton" destination="rpy-VY-CNK" id="rOE-Hk-Olc"/>
+                <outlet property="songName" destination="OgY-fs-8Lc" id="zOg-bv-ECp"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="59.5"/>
+        </tableViewCell>
+    </objects>
+</document>
