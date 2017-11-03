@@ -80,19 +80,19 @@
 		C3E8ED651FA2EC48008DDB83 /* iPlay */ = {
 			isa = PBXGroup;
 			children = (
-				C3C51AB71FAB23A1006ECB7F /* Song.swift */,
 				C3E8ED661FA2EC48008DDB83 /* AppDelegate.swift */,
 				C327BEC41FA32FC200A1FADE /* RegisterViewController.swift */,
 				C3E8ED681FA2EC48008DDB83 /* LoginViewController.swift */,
 				C30792AF1FA82F14001C1C34 /* RegisteredUser+CoreDataClass.swift */,
 				C30792B01FA82F14001C1C34 /* RegisteredUser+CoreDataProperties.swift */,
-				C3C51AA91FAAD820006ECB7F /* MainViewController.swift */,
+				C3C51AB71FAB23A1006ECB7F /* Song.swift */,
 				C3C51AAB1FAAE854006ECB7F /* SongsView.swift */,
 				C3C51AAF1FAAF2C8006ECB7F /* SongsView.xib */,
 				C3C51AB31FAAF357006ECB7F /* SongsTableViewCell.swift */,
 				C3C51AB41FAAF357006ECB7F /* SongsTableViewCell.xib */,
 				C3C51AB11FAAF2E4006ECB7F /* PhotosAndVideosCollectionView.xib */,
 				C3C51AAD1FAAE89C006ECB7F /* PhotosAndVideosCollectionView.swift */,
+				C3C51AA91FAAD820006ECB7F /* MainViewController.swift */,
 				C3E8ED6A1FA2EC48008DDB83 /* Main.storyboard */,
 				C3E8ED701FA2EC48008DDB83 /* Assets.xcassets */,
 				C3E8ED721FA2EC48008DDB83 /* LaunchScreen.storyboard */,

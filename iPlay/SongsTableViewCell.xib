@@ -39,10 +39,9 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lJ-ti-UqN">
-                        <rect key="frame" x="292" y="19" width="47" height="21"/>
+                        <rect key="frame" x="292" y="19" width="47" height="28"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="47" id="PXI-Gr-6XM"/>
-                            <constraint firstAttribute="height" constant="21" id="UEB-5j-gGn"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="13"/>
                         <state key="normal" title="Cancel">
@@ -54,9 +53,8 @@
                         </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpy-VY-CNK">
-                        <rect key="frame" x="231" y="15" width="46" height="30"/>
+                        <rect key="frame" x="231" y="15" width="46" height="37"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="30" id="M4G-T9-lYP"/>
                             <constraint firstAttribute="width" constant="46" id="y9q-42-Gsk"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="13"/>
@@ -88,7 +86,7 @@
                         </connections>
                     </button>
                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mnm-jQ-wAD">
-                        <rect key="frame" x="10" y="50" width="235" height="2"/>
+                        <rect key="frame" x="10" y="50" width="200" height="2"/>
                     </progressView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3c-De-MG1">
                         <rect key="frame" x="2" y="25" width="234" height="17"/>
@@ -102,7 +100,7 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="OgY-fs-8Lc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="2" id="5gi-6c-8o0"/>
-                    <constraint firstItem="5zT-Xz-uxD" firstAttribute="leading" secondItem="mnm-jQ-wAD" secondAttribute="trailing" id="8Pc-Yo-AdI"/>
+                    <constraint firstItem="5zT-Xz-uxD" firstAttribute="leading" secondItem="mnm-jQ-wAD" secondAttribute="trailing" constant="35" id="8Pc-Yo-AdI"/>
                     <constraint firstItem="N3c-De-MG1" firstAttribute="trailing" secondItem="OgY-fs-8Lc" secondAttribute="trailing" id="CFF-Cq-ErJ"/>
                     <constraint firstItem="4lJ-ti-UqN" firstAttribute="leading" secondItem="rpy-VY-CNK" secondAttribute="trailing" constant="15" id="E6K-8S-NU2"/>
                     <constraint firstItem="mnm-jQ-wAD" firstAttribute="top" secondItem="N3c-De-MG1" secondAttribute="bottom" constant="8" id="Nwj-Ua-vz2"/>

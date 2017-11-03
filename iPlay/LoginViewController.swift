@@ -11,6 +11,7 @@ import CoreData
 
 class LoginViewController: UIViewController {
    var users: [NSManagedObject] = []
+ 
     
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
     @IBOutlet var passwordField: UITextField!

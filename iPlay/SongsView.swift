@@ -11,9 +11,9 @@ import UIKit
 class SongsView: UIView {
     @IBOutlet var searchBar: UISearchBar!
     @IBOutlet var tableView: UITableView!
-    
+    var searchResults = [Song]()
     func setUpView()   {
-        tableView.register(UINib.init(nibName: "SongsTableViewCell", bundle: nil), forCellReuseIdentifier: "SongCell")
+        tableView.register(UINib.init(nibName: "SongsTableViewCell", bundle: nil), forCellReuseIdentifier: "songCell")
     }
     /*
     // Only override draw() if you perform custom drawing.
@@ -29,6 +29,7 @@ extension SongsView : UITableViewDelegate, UITableViewDataSource {
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //return searchResults.count
         return 3
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -37,8 +38,48 @@ extension SongsView : UITableViewDelegate, UITableViewDataSource {
         cell.artistName.text = "DS"
         return cell
     }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60.0
+    }
+   
 //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        //
 //    }
+    
+}
+extension SongsView : SongsCellDelegate{
+    func pauseTapped(_ cell: SongsTableViewCell) {
+        if let indexPath = tableView.indexPath(for: cell){
+            let song = searchResults[indexPath.row]
+           // pauseDownload(song)
+            tableView.reloadRows(at: [IndexPath(row: indexPath.row, section: 0)], with: .none)
+        }
+    }
+    
+    func resumeTapped(_ cell: SongsTableViewCell) {
+        if let indexPath = tableView.indexPath(for: cell){
+            let song = searchResults[indexPath.row]
+            //  resumeDownload(song)
+            tableView.reloadRows(at: [IndexPath(row : indexPath.row, section:0)], with: .none)
+        }
+    }
+    
+    func cancelTapped(_ cell: SongsTableViewCell) {
+        if let indexPath = tableView.indexPath(for: cell){
+            let song = searchResults[indexPath.row]
+           // cancelDownload(song)
+            tableView.reloadRows(at: [IndexPath(row : indexPath.row, section:0)], with: .none)
+        }
+    }
+    
+    func downloadTapped(_ cell: SongsTableViewCell) {
+        if let indexPath = tableView.indexPath(for: cell){
+            let song = searchResults[indexPath.row]
+           // startDownload(song)
+            tableView.reloadRows(at: [IndexPath(row : indexPath.row, section:0)], with: .none)
+        }
+    }
+    
+    
     
 }
